@@ -7,11 +7,12 @@ export default function decorate(block) {
 
   const innerContent = block.children[1].querySelector('div');
   innerContent.setAttribute('class', 'inner-content');
-  innerContent.setAttribute('data-aue-resource', 'urn:fcsconnection:https://docs.google.com/spreadsheets/d/11tQcypohipUDwz0FRcOmWUu_EsAbMwvLprDFpGygW18');
+  innerContent.setAttribute('data-aue-resource', 'urn:fcsconnection:/bs2');
   innerContent.setAttribute('data-aue-type', 'component');
 
   if (innerContent) {
     const eyebrow = innerContent.querySelector('h3');
+    eyebrow.setAttribute('data-aue-resource', 'urn:fcsconnection:/bs2');
     eyebrow.setAttribute('data-aue-type', 'text');
     if (eyebrow && eyebrow.querySelector('.icon')) {
       eyebrow.classList.add('icon-eyebrow');
