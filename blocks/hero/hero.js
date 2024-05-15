@@ -14,6 +14,7 @@ export default function decorate(block) {
     const eyebrow = innerContent.querySelector('h3');
     if (eyebrow && eyebrow.querySelector('.icon')) {
       eyebrow.classList.add('icon-eyebrow');
+      eyebrow.setAttribute('data-aue-type', 'text');
     }
   }
 
