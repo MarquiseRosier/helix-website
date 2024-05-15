@@ -7,7 +7,7 @@ export default function decorate(block) {
 
   const innerContent = block.children[1].querySelector('div');
   innerContent.setAttribute('class', 'inner-content');
-  innerContent.setAttribute('data-aue-resource', 'urn:fcsconnection:/bs2');
+  innerContent.setAttribute('data-aue-resource', 'urn:adobe:aue:system:fcsconnection:/bs2');
   innerContent.setAttribute('data-aue-type', 'component');
 
   if (innerContent) {
